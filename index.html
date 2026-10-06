@@ -62,7 +62,7 @@
       position: fixed;
       inset: 0;
       background:
-        url("assets/bg-road.png")
+        url("bg-road.png")
         center center / cover
         no-repeat;
       z-index: -3;
@@ -81,9 +81,7 @@
       z-index: -2;
     }
 
-    /* =========================
-       MENU
-    ========================== */
+    /* MENU */
 
     .site-header {
       position: sticky;
@@ -172,9 +170,7 @@
       font-size: 20px;
     }
 
-    /* =========================
-       ELEMENTOS GERAIS
-    ========================== */
+    /* ELEMENTOS GERAIS */
 
     .glass-panel {
       background:
@@ -266,9 +262,7 @@
       font-size: 12px;
     }
 
-    /* =========================
-       HERO
-    ========================== */
+    /* HERO */
 
     .hero {
       min-height: calc(100vh - 84px);
@@ -347,9 +341,7 @@
       border: 1px solid rgba(24, 230, 229, 0.18);
     }
 
-    /* =========================
-       SERVIÇOS
-    ========================== */
+    /* SERVIÇOS */
 
     .services-grid {
       display: grid;
@@ -392,9 +384,7 @@
       align-self: flex-start;
     }
 
-    /* =========================
-       VEÍCULOS
-    ========================== */
+    /* VEÍCULOS */
 
     .vehicles-grid {
       display: grid;
@@ -442,9 +432,7 @@
       color: #d7ffff;
     }
 
-    /* =========================
-       REGIÕES
-    ========================== */
+    /* REGIÕES */
 
     .regions-layout {
       display: grid;
@@ -608,9 +596,7 @@
       color: var(--muted);
     }
 
-    /* =========================
-       QUEM SOMOS
-    ========================== */
+    /* QUEM SOMOS */
 
     .about-layout {
       display: grid;
@@ -630,7 +616,7 @@
           rgba(0, 10, 14, 0.08),
           rgba(0, 10, 14, 0.25)
         ),
-        url("assets/about-bg.png")
+        url("about-bg.png")
         center / cover
         no-repeat;
       min-height: 720px;
@@ -673,9 +659,7 @@
       line-height: 1.1;
     }
 
-    /* =========================
-       CONTATO
-    ========================== */
+    /* CONTATO */
 
     .contact-wrap {
       padding: 34px;
@@ -767,9 +751,7 @@
       box-shadow: 0 0 0 2px rgba(24, 230, 229, 0.08);
     }
 
-    /* =========================
-       RODAPÉ
-    ========================== */
+    /* RODAPÉ */
 
     .site-footer {
       background: rgba(0, 10, 13, 0.94);
@@ -845,9 +827,7 @@
       font-size: 13px;
     }
 
-    /* =========================
-       WHATSAPP FLUTUANTE
-    ========================== */
+    /* WHATSAPP FLUTUANTE */
 
     .whatsapp-float {
       position: fixed;
@@ -867,11 +847,10 @@
         0 0 20px rgba(17, 217, 146, 0.35);
     }
 
-    /* =========================
-       RESPONSIVO
-    ========================== */
+    /* RESPONSIVO */
 
     @media (max-width: 980px) {
+
       .main-nav {
         position: absolute;
         top: 84px;
@@ -941,6 +920,7 @@
     }
 
     @media (max-width: 640px) {
+
       .section {
         padding: 70px 0;
       }
@@ -1059,6 +1039,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       html {
         scroll-behavior: auto;
       }
@@ -1080,7 +1061,9 @@
   <div class="page-overlay" aria-hidden="true"></div>
 
   <!-- MENU -->
+
   <header class="site-header" id="topo">
+
     <div class="container nav-wrap">
 
       <a
@@ -1088,18 +1071,24 @@
         class="brand"
         aria-label="ViaReserve - Início"
       >
+
         <img
-          src="assets/logo-viareserve.png"
+          src="logo-viareserve.png"
           alt="ViaReserve"
         />
 
         <div class="brand-text">
-          <strong>ViaReserve</strong>
+
+          <strong>
+            ViaReserve
+          </strong>
 
           <span>
             Transporte Executivo • Airport Transfer
           </span>
+
         </div>
+
       </a>
 
       <button
@@ -1114,24 +1103,29 @@
         class="main-nav"
         aria-label="Navegação principal"
       >
+
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
         <a href="#veiculos">Veículos</a>
         <a href="#regioes">Regiões Atendidas</a>
         <a href="#quem-somos">Quem Somos</a>
         <a href="#contato">Contato</a>
+
       </nav>
 
     </div>
+
   </header>
 
   <main>
 
     <!-- HERO -->
+
     <section
       class="hero section"
       id="inicio"
     >
+
       <div class="container hero-grid">
 
         <div class="hero-copy glass-panel">
@@ -1169,12 +1163,13 @@
             </a>
 
           </div>
+
         </div>
 
         <div class="hero-car-wrap">
 
           <img
-            src="assets/corolla.png"
+            src="corolla.png"
             alt="Toyota Corolla Altis Premium Hybrid preto da ViaReserve"
             class="hero-car"
           />
@@ -1182,13 +1177,16 @@
         </div>
 
       </div>
+
     </section>
 
     <!-- SERVIÇOS -->
+
     <section
       class="section"
       id="servicos"
     >
+
       <div class="container">
 
         <div class="section-heading center">
@@ -1211,10 +1209,11 @@
 
         <div class="services-grid">
 
-          <!-- TRANSFER -->
           <article class="service-card glass-panel">
 
-            <div class="icon">✈</div>
+            <div class="icon">
+              ✈
+            </div>
 
             <h3>
               Transfer Aeroporto
@@ -1238,10 +1237,11 @@
 
           </article>
 
-          <!-- CORPORATIVO -->
           <article class="service-card glass-panel">
 
-            <div class="icon">▣</div>
+            <div class="icon">
+              ▣
+            </div>
 
             <h3>
               Transporte Corporativo
@@ -1270,10 +1270,11 @@
 
           </article>
 
-          <!-- VIAGENS -->
           <article class="service-card glass-panel">
 
-            <div class="icon">⌁</div>
+            <div class="icon">
+              ⌁
+            </div>
 
             <h3>
               Viagens Executivas
@@ -1297,10 +1298,11 @@
 
           </article>
 
-          <!-- SHOWS E EVENTOS -->
           <article class="service-card glass-panel">
 
-            <div class="icon">✦</div>
+            <div class="icon">
+              ✦
+            </div>
 
             <h3>
               Shows e Eventos
@@ -1324,10 +1326,11 @@
 
           </article>
 
-          <!-- MOTORISTA -->
           <article class="service-card glass-panel">
 
-            <div class="icon">◷</div>
+            <div class="icon">
+              ◷
+            </div>
 
             <h3>
               Motorista à Disposição
@@ -1351,10 +1354,11 @@
 
           </article>
 
-          <!-- PERSONALIZADO -->
           <article class="service-card glass-panel">
 
-            <div class="icon">◎</div>
+            <div class="icon">
+              ◎
+            </div>
 
             <h3>
               Atendimento Personalizado
@@ -1379,14 +1383,18 @@
           </article>
 
         </div>
+
       </div>
+
     </section>
 
     <!-- VEÍCULOS -->
+
     <section
       class="section"
       id="veiculos"
     >
+
       <div class="container">
 
         <div class="section-heading">
@@ -1410,11 +1418,10 @@
 
         <div class="vehicles-grid">
 
-          <!-- COROLLA -->
           <article class="vehicle-card glass-panel">
 
             <img
-              src="assets/corolla.png"
+              src="corolla.png"
               alt="Toyota Corolla Altis Hybrid preto"
             />
 
@@ -1432,9 +1439,11 @@
               </p>
 
               <div class="chips">
+
                 <span>Híbrido</span>
                 <span>Sedã executivo</span>
                 <span>Conforto</span>
+
               </div>
 
               <a
@@ -1447,13 +1456,13 @@
               </a>
 
             </div>
+
           </article>
 
-          <!-- TCROSS -->
           <article class="vehicle-card glass-panel">
 
             <img
-              src="assets/tcross.png"
+              src="tcross.png"
               alt="Volkswagen T-Cross branco"
             />
 
@@ -1473,9 +1482,11 @@
               </p>
 
               <div class="chips">
+
                 <span>SUV</span>
                 <span>Bancos de couro</span>
                 <span>Versatilidade</span>
+
               </div>
 
               <a
@@ -1488,17 +1499,22 @@
               </a>
 
             </div>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
     <!-- REGIÕES -->
+
     <section
       class="section"
       id="regioes"
     >
+
       <div class="container">
 
         <div class="section-heading center">
@@ -1548,6 +1564,7 @@
               </div>
 
             </div>
+
           </div>
 
           <div class="region-cards">
@@ -1596,6 +1613,7 @@
             </article>
 
           </div>
+
         </div>
 
         <div class="airport-strip glass-panel">
@@ -1614,13 +1632,16 @@
         </div>
 
       </div>
+
     </section>
 
     <!-- QUEM SOMOS -->
+
     <section
       class="section"
       id="quem-somos"
     >
+
       <div class="container about-layout">
 
         <div class="about-copy glass-panel">
@@ -1722,9 +1743,11 @@
           </div>
 
           <div class="slogan-block">
+
             Cuidado em cada trajeto.
             <br />
             Excelência em cada detalhe.
+
           </div>
 
         </div>
@@ -1735,13 +1758,16 @@
         ></div>
 
       </div>
+
     </section>
 
     <!-- CONTATO -->
+
     <section
       class="section"
       id="contato"
     >
+
       <div class="container contact-wrap glass-panel">
 
         <div class="contact-info">
@@ -1840,6 +1866,7 @@
         </div>
 
         <!-- FORMULÁRIO -->
+
         <form
           class="contact-form"
           id="whatsapp-form"
@@ -1884,6 +1911,7 @@
               name="servico"
               required
             >
+
               <option value="">
                 Selecione o serviço
               </option>
@@ -1911,7 +1939,9 @@
               <option>
                 Atendimento Personalizado
               </option>
+
             </select>
+
           </label>
 
           <label>
@@ -1933,11 +1963,13 @@
         </form>
 
       </div>
+
     </section>
 
   </main>
 
   <!-- RODAPÉ -->
+
   <footer class="site-footer">
 
     <div class="container footer-main">
@@ -1945,7 +1977,7 @@
       <div class="footer-brand">
 
         <img
-          src="assets/logo-viareserve.png"
+          src="logo-viareserve.png"
           alt="ViaReserve"
         />
 
@@ -2019,6 +2051,7 @@
   </footer>
 
   <!-- WHATSAPP FLUTUANTE -->
+
   <a
     class="whatsapp-float"
     href="https://wa.me/5519993817238?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20ViaReserve%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
@@ -2030,9 +2063,8 @@
   </a>
 
   <script>
-    /* =========================
-       MENU MOBILE
-    ========================== */
+
+    /* MENU MOBILE */
 
     const menuToggle =
       document.querySelector(".menu-toggle");
@@ -2054,6 +2086,7 @@
           "aria-expanded",
           String(open)
         );
+
       }
     );
 
@@ -2069,13 +2102,12 @@
               "aria-expanded",
               "false"
             );
+
           }
         )
     );
 
-    /* =========================
-       MENU ATIVO NO SCROLL
-    ========================== */
+    /* MENU ATIVO NO SCROLL */
 
     const sections =
       [...document.querySelectorAll("main section[id]")];
@@ -2099,6 +2131,7 @@
                 );
 
               }
+
             }
           );
 
@@ -2117,9 +2150,7 @@
         observer.observe(section)
     );
 
-    /* =========================
-       FORMULÁRIO → WHATSAPP
-    ========================== */
+    /* FORMULÁRIO PARA WHATSAPP */
 
     const form =
       document.getElementById(
@@ -2179,12 +2210,11 @@
           "_blank",
           "noopener"
         );
+
       }
     );
 
-    /* =========================
-       PARALLAX SUAVE
-    ========================== */
+    /* PARALLAX SUAVE */
 
     const bg =
       document.querySelector(
@@ -2222,17 +2252,22 @@
                   `scale(1.05) translateY(${y}px)`;
 
                 ticking = false;
+
               }
             );
 
             ticking = true;
+
           }
+
         },
         {
           passive: true
         }
       );
+
     }
+
   </script>
 
 </body>
