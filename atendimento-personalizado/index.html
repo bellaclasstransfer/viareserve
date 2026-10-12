@@ -275,23 +275,38 @@
       margin:0 auto;
     }
 
-    /* HEADER */
+    /* =====================================================
+       HEADER
+    ===================================================== */
 
     .header{
       position:sticky;
       top:0;
       z-index:1000;
+
       height:var(--header);
+
       background:rgba(0,12,16,.98);
-      border-bottom:1px solid rgba(24,230,229,.15);
+
+      border-bottom:
+        1px solid
+        rgba(24,230,229,.15);
+
       backdrop-filter:blur(14px);
     }
 
     .nav{
       height:100%;
+
       display:grid;
-      grid-template-columns:360px 1fr 200px;
+
+      grid-template-columns:
+        360px
+        1fr
+        200px;
+
       gap:20px;
+
       align-items:center;
     }
 
@@ -314,7 +329,11 @@
     }
 
     .brand-name{
-      font-family:Georgia,"Times New Roman",serif;
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       font-size:34px;
       line-height:1;
       font-weight:400;
@@ -322,10 +341,12 @@
 
     .brand-sub{
       margin-top:7px;
+
       font-size:9px;
       font-weight:700;
       letter-spacing:.18em;
       text-transform:uppercase;
+
       color:#bdebea;
     }
 
@@ -333,7 +354,9 @@
       display:flex;
       align-items:center;
       justify-content:center;
+
       gap:30px;
+
       font-size:16px;
       font-weight:600;
     }
@@ -348,38 +371,60 @@
 
     .header-cta{
       justify-self:end;
+
       min-height:48px;
+
       padding:0 24px;
+
       display:inline-flex;
       align-items:center;
       justify-content:center;
+
       border-radius:999px;
-      background:linear-gradient(90deg,#32e9e1,#15cdcb);
+
+      background:
+        linear-gradient(
+          90deg,
+          #32e9e1,
+          #15cdcb
+        );
+
       color:#011315;
+
       font-size:13px;
       font-weight:800;
+
       text-transform:uppercase;
     }
 
     .menu-button{
       display:none;
+
       width:44px;
       height:44px;
+
       border:1px solid var(--line);
       border-radius:10px;
+
       background:transparent;
+
       color:white;
       font-size:23px;
     }
 
-    /* TEXTOS */
+    /* =====================================================
+       TEXTOS
+    ===================================================== */
 
     .eyebrow{
       margin:0 0 12px;
+
       color:#079b9e;
+
       font-size:14px;
       font-weight:800;
       letter-spacing:.22em;
+
       text-transform:uppercase;
     }
 
@@ -389,34 +434,60 @@
 
     .section-title{
       margin:0;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(46px,4.4vw,64px);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          46px,
+          4.4vw,
+          64px
+        );
+
       line-height:1.05;
       font-weight:400;
     }
 
     .section-text{
       margin:18px 0 0;
+
       color:var(--muted);
+
       font-size:17px;
       line-height:1.6;
     }
 
     .btn{
       min-height:48px;
+
       padding:0 24px;
+
       display:inline-flex;
       align-items:center;
       justify-content:center;
+
       gap:10px;
-      border:1px solid rgba(255,255,255,.70);
+
+      border:
+        1px solid
+        rgba(255,255,255,.70);
+
       border-radius:10px;
-      background:rgba(0,13,17,.46);
+
+      background:
+        rgba(0,13,17,.46);
+
       color:white;
+
       font-size:13px;
       font-weight:800;
+
       letter-spacing:.04em;
       text-transform:uppercase;
+
       transition:.2s ease;
     }
 
@@ -426,19 +497,31 @@
 
     .btn-primary{
       border:0;
+
       color:#011315;
-      background:linear-gradient(90deg,#32e9e1,#15cdcb);
+
+      background:
+        linear-gradient(
+          90deg,
+          #32e9e1,
+          #15cdcb
+        );
     }
 
-    /* ÍCONES */
+    /* =====================================================
+       ÍCONES
+    ===================================================== */
 
     .svg-icon{
       width:27px;
       height:27px;
+
       stroke:currentColor;
+
       stroke-width:1.8;
       stroke-linecap:round;
       stroke-linejoin:round;
+
       fill:none;
     }
 
@@ -447,32 +530,54 @@
       height:31px;
     }
 
-    /* HERO */
+    /* =====================================================
+       HERO
+    ===================================================== */
 
     .hero{
       position:relative;
-      min-height:calc(100svh - var(--header));
+
+      min-height:
+        calc(
+          100svh
+          -
+          var(--header)
+        );
+
       display:flex;
       align-items:center;
+
       overflow:hidden;
+
       background:#031419;
-      border-bottom:1px solid rgba(24,230,229,.35);
+
+      border-bottom:
+        1px solid
+        rgba(24,230,229,.35);
     }
 
     .hero-bg{
       position:absolute;
+
       inset:0;
+
       width:100%;
       height:100%;
+
       object-fit:cover;
+
       object-position:center 58%;
+
       z-index:0;
     }
 
     .hero-overlay{
       position:absolute;
+
       inset:0;
+
       z-index:1;
+
       background:
         linear-gradient(
           90deg,
@@ -490,47 +595,76 @@
 
     .hero-copy{
       width:min(780px,60vw);
+
       padding:82px 0;
     }
 
     .hero h1{
       margin:0;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(58px,5.2vw,78px);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          58px,
+          5.2vw,
+          78px
+        );
+
       line-height:.98;
+
       font-weight:400;
+
       letter-spacing:-.02em;
     }
 
     .hero-description{
       max-width:750px;
+
       margin:24px 0 0;
+
       color:#eef4f4;
+
       font-size:17px;
+
       line-height:1.55;
     }
 
     .hero-actions{
       display:flex;
+
       flex-wrap:wrap;
+
       gap:14px;
+
       margin-top:30px;
     }
 
     .hero-meta{
       display:flex;
+
       flex-wrap:wrap;
+
       gap:34px;
+
       margin-top:30px;
+
       color:#eaf7f6;
+
       font-size:13px;
       font-weight:800;
+
       text-transform:uppercase;
     }
 
     .hero-meta span{
       display:flex;
+
       align-items:center;
+
       gap:9px;
     }
 
@@ -538,18 +672,28 @@
       color:var(--turquoise);
     }
 
-    /* ATENDIMENTO SOB MEDIDA */
+    /* =====================================================
+       ATENDIMENTO SOB MEDIDA
+       MANTÉM O INTERIOR DO COROLLA
+    ===================================================== */
 
     .split{
       display:grid;
-      grid-template-columns:1fr 1.08fr;
+
+      grid-template-columns:
+        1fr
+        1.08fr;
+
       background:#fff;
+
       color:var(--ink);
     }
 
     .split-image{
       min-height:500px;
+
       overflow:hidden;
+
       background:
         url("../corolla-interior.png")
         center/cover
@@ -557,72 +701,139 @@
     }
 
     .split-copy{
-      padding:72px clamp(38px,5vw,82px);
+      padding:
+        72px
+        clamp(
+          38px,
+          5vw,
+          82px
+        );
+
       align-self:center;
     }
 
     .features{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+
+      grid-template-columns:
+        repeat(
+          4,
+          1fr
+        );
+
       gap:18px;
+
       margin-top:30px;
     }
 
     .feature{
       display:flex;
+
       align-items:center;
+
       gap:11px;
+
       color:#2b4145;
+
       font-size:13px;
       font-weight:700;
     }
 
     .feature-icon{
       flex:0 0 46px;
+
       width:46px;
       height:46px;
+
       display:grid;
+
       place-items:center;
-      border:1px solid #0aa7aa;
+
+      border:
+        1px solid
+        #0aa7aa;
+
       border-radius:10px;
+
       color:#078f92;
     }
 
-    /* FAIXA */
+    /* =====================================================
+       FAIXA
+    ===================================================== */
 
     .premium-strip{
-      padding:34px;
+      padding:
+        34px
+        34px;
+
       background:#00181d;
+
       color:white;
-      border-top:1px solid rgba(24,230,229,.40);
-      border-bottom:1px solid rgba(24,230,229,.40);
+
+      border-top:
+        1px solid
+        rgba(24,230,229,.40);
+
+      border-bottom:
+        1px solid
+        rgba(24,230,229,.40);
     }
 
     .premium-strip h3{
-      margin:0 0 28px;
+      margin:
+        0
+        0
+        28px;
+
       text-align:center;
-      font-family:Georgia,"Times New Roman",serif;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       font-size:30px;
+
       font-weight:400;
     }
 
     .premium-grid{
       display:grid;
-      grid-template-columns:repeat(8,1fr);
+
+      grid-template-columns:
+        repeat(
+          8,
+          1fr
+        );
+
       gap:0;
     }
 
     .premium-item{
       min-height:105px;
+
       display:flex;
+
       flex-direction:column;
+
       align-items:center;
+
       gap:10px;
-      padding:5px 14px;
+
+      padding:
+        5px
+        14px;
+
       text-align:center;
+
       color:#e0eded;
+
       font-size:13px;
-      border-right:1px solid rgba(24,230,229,.20);
+
+      border-right:
+        1px solid
+        rgba(24,230,229,.20);
     }
 
     .premium-item:last-child{
@@ -633,22 +844,37 @@
       color:var(--turquoise);
     }
 
-    /* ROTINA */
+    /* =====================================================
+       ROTINA
+    ===================================================== */
 
     .routine{
       display:grid;
-      grid-template-columns:1fr 1fr;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
       background:#fff;
+
       color:var(--ink);
     }
 
     .routine-copy{
-      padding:72px clamp(38px,5vw,82px);
+      padding:
+        72px
+        clamp(
+          38px,
+          5vw,
+          82px
+        );
+
       align-self:center;
     }
 
     .routine-image{
       min-height:500px;
+
       background:
         url("../bg-road.png")
         center/cover
@@ -659,78 +885,146 @@
       margin-top:26px;
     }
 
-    /* OCASIÕES */
+    /* =====================================================
+       OCASIÕES
+       IMAGEM ALTERADA PARA NÃO REPETIR O INTERIOR
+    ===================================================== */
 
     .occasions{
       display:grid;
-      grid-template-columns:.92fr 1.08fr;
+
+      grid-template-columns:
+        .92fr
+        1.08fr;
+
       background:#fff;
+
       color:var(--ink);
     }
 
     .occasions-image{
       min-height:520px;
+
       background:
-        url("../corolla-interior.png")
+        linear-gradient(
+          rgba(0,12,16,.05),
+          rgba(0,12,16,.16)
+        ),
+        url("../hero-indaiatuba-noite.png")
         center/cover
         no-repeat;
     }
 
     .occasions-copy{
-      padding:72px clamp(38px,5vw,82px);
+      padding:
+        72px
+        clamp(
+          38px,
+          5vw,
+          82px
+        );
+
       align-self:center;
     }
 
     .occasion-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px 30px;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap:
+        18px
+        30px;
+
       margin-top:30px;
     }
 
     .occasion-item{
       display:flex;
+
       align-items:flex-start;
+
       gap:12px;
+
       color:#36494c;
+
       font-size:14px;
     }
 
     .occasion-item .svg-icon{
       flex:0 0 22px;
+
       width:22px;
       height:22px;
+
       color:#07999b;
     }
 
-    /* PROCESSO */
+    /* =====================================================
+       PROCESSO
+    ===================================================== */
 
     .process{
       padding:66px 0;
+
       background:#fff;
+
       color:var(--ink);
     }
 
     .process-title{
-      margin:0 0 36px;
+      margin:
+        0
+        0
+        36px;
+
       text-align:center;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(38px,3.5vw,54px);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          38px,
+          3.5vw,
+          54px
+        );
+
       font-weight:400;
     }
 
     .process-grid{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+
+      grid-template-columns:
+        repeat(
+          4,
+          1fr
+        );
+
       overflow:hidden;
-      border:1px solid #d7e0e1;
+
+      border:
+        1px solid
+        #d7e0e1;
+
       border-radius:10px;
     }
 
     .step{
-      padding:30px 26px;
+      padding:
+        30px
+        26px;
+
       text-align:center;
-      border-right:1px solid #d7e0e1;
+
+      border-right:
+        1px solid
+        #d7e0e1;
     }
 
     .step:last-child{
@@ -740,11 +1034,20 @@
     .step-icon{
       width:44px;
       height:44px;
-      margin:0 auto 14px;
+
+      margin:
+        0
+        auto
+        14px;
+
       display:grid;
+
       place-items:center;
+
       border-radius:50%;
+
       background:#057a7e;
+
       color:white;
     }
 
@@ -754,65 +1057,107 @@
     }
 
     .step h3{
-      margin:0 0 8px;
-      font-family:Georgia,"Times New Roman",serif;
+      margin:
+        0
+        0
+        8px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       font-size:22px;
+
       font-weight:400;
     }
 
     .step p{
       margin:0;
+
       color:#667477;
+
       font-size:13px;
+
       line-height:1.48;
     }
 
-    /* VEÍCULOS */
+    /* =====================================================
+       VEÍCULOS
+       MESMO PADRÃO DAS OUTRAS PÁGINAS
+    ===================================================== */
 
     .vehicles{
       padding:72px 0;
+
       background:#03171b;
+
       color:white;
     }
 
     .vehicles-heading{
       max-width:1050px;
-      margin:0 auto 34px;
+
+      margin:
+        0
+        auto
+        34px;
+
       text-align:center;
     }
 
     .vehicles-heading .eyebrow{
       display:flex;
+
       align-items:center;
+
       justify-content:center;
+
       gap:22px;
+
       color:var(--turquoise);
     }
 
     .vehicles-heading .eyebrow::before,
     .vehicles-heading .eyebrow::after{
       content:"";
+
       width:42px;
       height:2px;
+
       background:var(--turquoise);
     }
 
     .vehicles-heading p:last-child{
       max-width:860px;
-      margin:16px auto 0;
+
+      margin:
+        16px
+        auto
+        0;
+
       color:var(--text);
+
       font-size:17px;
+
       line-height:1.55;
     }
 
     .vehicle-grid{
       display:grid;
-      grid-template-columns:minmax(0,800px);
+
+      grid-template-columns:
+        minmax(
+          0,
+          800px
+        );
+
       justify-content:center;
     }
 
     .vehicle-card{
       overflow:hidden;
+
       background:
         linear-gradient(
           180deg,
@@ -820,41 +1165,66 @@
           rgba(1,15,19,.91)
         );
 
-      border:1px solid rgba(24,230,229,.68);
+      border:
+        1px solid
+        rgba(24,230,229,.68);
+
       border-radius:18px;
-      box-shadow:0 18px 50px rgba(0,0,0,.34);
+
+      box-shadow:
+        0 18px 50px
+        rgba(0,0,0,.34);
     }
 
     .vehicle-media{
       height:430px;
+
       overflow:hidden;
+
       background:#021014;
     }
 
     .vehicle-media img{
       width:100%;
       height:100%;
+
       object-fit:cover;
+
       object-position:center;
     }
 
     .vehicle-body{
-      padding:26px 28px 28px;
+      padding:
+        26px
+        28px
+        28px;
     }
 
     .vehicle-body h3{
       margin:0;
-      font-family:Georgia,"Times New Roman",serif;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       font-size:34px;
+
       font-weight:400;
+
       line-height:1.08;
     }
 
-    /* FAQ */
+    /* =====================================================
+       FAQ
+       MESMO PADRÃO DAS OUTRAS PÁGINAS
+    ===================================================== */
 
     .faq{
       position:relative;
+
       padding:78px 0;
+
       overflow:hidden;
 
       background:
@@ -870,49 +1240,91 @@
 
     .faq-heading{
       max-width:900px;
+
       margin-bottom:34px;
     }
 
     .faq-heading h2{
       margin:0;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(46px,4.4vw,64px);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          46px,
+          4.4vw,
+          64px
+        );
+
       font-weight:400;
+
       line-height:1.05;
     }
 
     .faq-heading p{
       max-width:720px;
-      margin:16px 0 0;
+
+      margin:
+        16px
+        0
+        0;
+
       color:#dbe7e7;
+
       font-size:17px;
+
       line-height:1.55;
     }
 
     .faq-list{
       display:grid;
+
       gap:14px;
+
       max-width:1120px;
     }
 
     .faq-card{
       display:grid;
-      grid-template-columns:76px 1fr;
+
+      grid-template-columns:
+        76px
+        1fr;
+
       gap:20px;
+
       align-items:center;
-      padding:18px 24px;
-      background:rgba(0,30,35,.94);
-      border:1px solid rgba(24,230,229,.70);
+
+      padding:
+        18px
+        24px;
+
+      background:
+        rgba(0,30,35,.94);
+
+      border:
+        1px solid
+        rgba(24,230,229,.70);
+
       border-radius:12px;
     }
 
     .faq-icon{
       width:58px;
       height:58px;
+
       display:grid;
+
       place-items:center;
+
       border-radius:50%;
-      background:rgba(24,230,229,.08);
+
+      background:
+        rgba(24,230,229,.08);
+
       color:var(--turquoise);
     }
 
@@ -922,32 +1334,52 @@
     }
 
     .faq-content h3{
-      margin:0 0 6px;
-      font-family:Georgia,"Times New Roman",serif;
+      margin:
+        0
+        0
+        6px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
       font-size:20px;
+
       font-weight:400;
     }
 
     .faq-content p{
       margin:0;
+
       color:#d8e5e5;
+
       font-size:14px;
+
       line-height:1.55;
     }
 
-    /* CTA */
+    /* =====================================================
+       CTA
+    ===================================================== */
 
     .final-cta{
       position:relative;
+
       padding:72px 0;
+
       overflow:hidden;
+
       background:#021419;
     }
 
     .final-cta::before{
       content:"";
+
       position:absolute;
+
       inset:0;
+
       background:
         linear-gradient(
           90deg,
@@ -961,89 +1393,151 @@
 
     .final-cta .container{
       position:relative;
+
       z-index:2;
     }
 
     .final-cta h2{
       margin:0;
+
       max-width:800px;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(44px,4vw,60px);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          44px,
+          4vw,
+          60px
+        );
+
       font-weight:400;
+
       line-height:1.05;
     }
 
     .final-cta p{
       max-width:760px;
-      margin:16px 0 26px;
+
+      margin:
+        16px
+        0
+        26px;
+
       color:#e0e9e9;
+
       font-size:17px;
     }
 
-    /* FOOTER */
+    /* =====================================================
+       FOOTER
+    ===================================================== */
 
     .footer{
-      padding:34px 0 18px;
+      padding:
+        34px
+        0
+        18px;
+
       background:#001014;
-      border-top:1px solid rgba(24,230,229,.18);
+
+      border-top:
+        1px solid
+        rgba(24,230,229,.18);
     }
 
     .footer-main{
       display:grid;
-      grid-template-columns:1fr auto;
+
+      grid-template-columns:
+        1fr
+        auto;
+
       gap:30px;
+
       align-items:center;
     }
 
     .footer-brand{
       display:flex;
+
       align-items:center;
+
       gap:14px;
     }
 
     .footer-brand img{
       width:66px;
       height:66px;
+
       border-radius:50%;
     }
 
     .footer-copy{
       color:#c7d5d6;
+
       font-size:13px;
     }
 
     .footer-links{
       display:flex;
+
       flex-wrap:wrap;
+
       gap:18px;
+
       color:#c7d5d6;
+
       font-size:13px;
     }
 
     .footer-bottom{
       margin-top:24px;
+
       padding-top:16px;
-      border-top:1px solid rgba(255,255,255,.10);
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.10);
+
       color:#849597;
+
       text-align:center;
+
       font-size:11px;
     }
 
-    /* WHATSAPP */
+    /* =====================================================
+       WHATSAPP
+    ===================================================== */
 
     .whatsapp-floating{
       position:fixed;
+
       right:22px;
       bottom:22px;
+
       z-index:1200;
+
       width:58px;
       height:58px;
+
       display:grid;
+
       place-items:center;
+
       border-radius:50%;
+
       background:#0ed68e;
+
       color:white;
-      box-shadow:0 7px 28px rgba(0,0,0,.40);
+
+      box-shadow:
+        0 7px 28px
+        rgba(0,0,0,.40);
     }
 
     .whatsapp-floating .svg-icon{
@@ -1051,16 +1545,22 @@
       height:30px;
     }
 
-    /* RESPONSIVO */
+    /* =====================================================
+       RESPONSIVO
+    ===================================================== */
 
     @media(max-width:1100px){
 
       .nav{
-        grid-template-columns:auto 1fr auto;
+        grid-template-columns:
+          auto
+          1fr
+          auto;
       }
 
       .menu{
         gap:18px;
+
         font-size:14px;
       }
 
@@ -1069,11 +1569,17 @@
       }
 
       .features{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+          1fr
+          1fr;
       }
 
       .premium-grid{
-        grid-template-columns:repeat(4,1fr);
+        grid-template-columns:
+          repeat(
+            4,
+            1fr
+          );
       }
 
     }
@@ -1090,24 +1596,37 @@
 
       .menu-button{
         display:block;
+
         justify-self:end;
       }
 
       .nav{
-        grid-template-columns:1fr auto;
+        grid-template-columns:
+          1fr
+          auto;
       }
 
       .menu{
         display:none;
+
         position:absolute;
+
         top:var(--header);
+
         left:0;
         right:0;
+
         flex-direction:column;
+
         gap:18px;
+
         padding:24px;
+
         background:#031216;
-        border-bottom:1px solid var(--line);
+
+        border-bottom:
+          1px solid
+          var(--line);
       }
 
       .menu.open{
@@ -1120,6 +1639,7 @@
 
       .hero-copy{
         width:100%;
+
         max-width:82%;
       }
 
@@ -1140,7 +1660,9 @@
       }
 
       .process-grid{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+          1fr
+          1fr;
       }
 
     }
@@ -1166,16 +1688,22 @@
 
       .hero{
         min-height:680px;
+
         align-items:flex-start;
       }
 
       .hero-copy{
         max-width:100%;
-        padding:70px 0 40px;
+
+        padding:
+          70px
+          0
+          40px;
       }
 
       .hero h1{
         font-size:47px;
+
         line-height:1;
       }
 
@@ -1194,7 +1722,9 @@
       .split-copy,
       .routine-copy,
       .occasions-copy{
-        padding:48px 24px;
+        padding:
+          48px
+          24px;
       }
 
       .section-title{
@@ -1206,7 +1736,9 @@
       }
 
       .premium-grid{
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:
+          1fr
+          1fr;
       }
 
       .process-grid{
@@ -1215,7 +1747,10 @@
 
       .step{
         border-right:0;
-        border-bottom:1px solid #d7e0e1;
+
+        border-bottom:
+          1px solid
+          #d7e0e1;
       }
 
       .step:last-child{
@@ -1231,9 +1766,15 @@
       }
 
       .faq-card{
-        grid-template-columns:58px 1fr;
+        grid-template-columns:
+          58px
+          1fr;
+
         gap:14px;
-        padding:16px 18px;
+
+        padding:
+          16px
+          18px;
       }
 
       .faq-icon{
@@ -1257,7 +1798,9 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
   <header class="header">
 
@@ -1341,7 +1884,9 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <section class="hero">
 
@@ -1426,7 +1971,9 @@
 
     </section>
 
-    <!-- ATENDIMENTO SOB MEDIDA -->
+    <!-- =====================================================
+         ATENDIMENTO SOB MEDIDA
+    ====================================================== -->
 
     <section
       class="split"
@@ -1534,7 +2081,9 @@
 
     </section>
 
-    <!-- BENEFÍCIOS -->
+    <!-- =====================================================
+         FAIXA DE BENEFÍCIOS
+    ====================================================== -->
 
     <section class="premium-strip">
 
@@ -1658,7 +2207,9 @@
 
     </section>
 
-    <!-- ROTINA -->
+    <!-- =====================================================
+         ROTINA
+    ====================================================== -->
 
     <section class="routine">
 
@@ -1698,13 +2249,15 @@
 
     </section>
 
-    <!-- OCASIÕES -->
+    <!-- =====================================================
+         ATENDIMENTO PARA DIFERENTES OCASIÕES
+    ====================================================== -->
 
     <section class="occasions">
 
       <div
         class="occasions-image"
-        aria-label="Interior do Toyota Corolla ViaReserve"
+        aria-label="Atendimento executivo ViaReserve em Indaiatuba"
       ></div>
 
       <div class="occasions-copy">
@@ -1811,7 +2364,9 @@
 
     </section>
 
-    <!-- COMO RESERVAR -->
+    <!-- =====================================================
+         COMO SOLICITAR
+    ====================================================== -->
 
     <section class="process">
 
@@ -1913,7 +2468,9 @@
 
     </section>
 
-    <!-- VEÍCULOS -->
+    <!-- =====================================================
+         VEÍCULOS
+    ====================================================== -->
 
     <section
       class="vehicles"
@@ -1968,7 +2525,9 @@
 
     </section>
 
-    <!-- FAQ -->
+    <!-- =====================================================
+         PERGUNTAS FREQUENTES
+    ====================================================== -->
 
     <section class="faq">
 
@@ -2135,7 +2694,9 @@
 
     </section>
 
-    <!-- CTA FINAL -->
+    <!-- =====================================================
+         CTA FINAL
+    ====================================================== -->
 
     <section class="final-cta">
 
@@ -2165,7 +2726,9 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
 
   <footer class="footer">
 
@@ -2232,7 +2795,9 @@
 
   </footer>
 
-  <!-- WHATSAPP -->
+  <!-- =====================================================
+       WHATSAPP FLUTUANTE
+  ====================================================== -->
 
   <a
     class="whatsapp-floating"
@@ -2252,7 +2817,9 @@
 
   </a>
 
-  <!-- JAVASCRIPT -->
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
 
   <script>
 
