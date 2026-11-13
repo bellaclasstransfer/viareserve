@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -1212,6 +1213,25 @@ rgba(
 color:#a9b7b7;
 font-size:12px;
 }
+.footer-bottom-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:12px;
+}
+.footer-bottom a{
+color:var(--turquoise);
+white-space:nowrap;
+}
+.footer-bottom a:hover{
+text-decoration:underline;
+}
+@media(max-width:650px){
+.footer-bottom-content{
+flex-direction:column;
+text-align:center;
+}
+}
 /* WHATSAPP */
 .whatsapp-floating{
 position:fixed;
@@ -2279,7 +2299,7 @@ aria-label="Instagram"
 viewBox="0 0 24 24"
 aria-hidden="true"
 >
-<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
 </svg>
 </a>
 <!-- FACEBOOK -->
@@ -2338,7 +2358,10 @@ Indaiatuba • Campinas • Estado de São Paulo
 </div>
 </div>
 <div class="footer-bottom">
-ViaReserve | Transporte Executivo • Airport Transfer © 2026 — Todos os direitos reservados.
+<div class="footer-bottom-content">
+<span>ViaReserve | Transporte Executivo • Airport Transfer © 2026 — Todos os direitos reservados.</span>
+<a href="politica-de-privacidade.html">Política de Privacidade</a>
+</div>
 </div>
 </footer>
 <!-- WHATSAPP FLUTUANTE -->
